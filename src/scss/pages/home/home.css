@@ -1,0 +1,155 @@
+/* http://meyerweb.com/eric/tools/scss/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+* {
+  box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  font-family: Varela Round;
+}
+
+.container {
+  width: 100%;
+  max-width: 75rem;
+  margin: auto;
+  padding: 0 1rem;
+}
+
+.header {
+  background-color: pink;
+  padding: 0.5rem 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.header + main {
+  margin-top: 4.1212rem;
+}
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__logo {
+  width: 100%;
+  max-width: 3rem;
+  transition: 0.3s;
+}
+.header__logo:hover {
+  transform: scale(1.2);
+}
+.header__logo img {
+  width: 100%;
+}
+.header__links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.header__links a {
+  color: purple;
+  text-decoration: none;
+  font-weight: 700;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+.header__links a svg {
+  fill: purple;
+  width: 1rem;
+  transition: 0.3s;
+}
+.header__links a:hover {
+  color: #b300b3;
+}
+.header__links a:hover svg {
+  fill: #b300b3;
+}
+.header__links__button {
+  margin-left: 1rem;
+}
+.header__links__button a {
+  padding: 0.5rem 1rem;
+  background-color: #c0efca;
+  border: 2px solid #c0efca;
+  border-radius: 1rem;
+  color: #46d063;
+}
+.header__links__button a:hover {
+  color: #c0efca;
+  background-color: transparent;
+}
+
+.banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../../images/banner.jpg");
+  background-size: cover;
+}
+.banner .container {
+  height: 35rem;
+  display: flex;
+  align-items: center;
+}
+.banner svg {
+  width: 3rem;
+  fill: pink;
+}
+.banner h1 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 3rem;
+  color: white;
+}
