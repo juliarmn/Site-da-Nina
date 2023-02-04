@@ -1,14 +1,24 @@
 .banner{
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../../../images/banner.jpg');
-  background-size: cover;
+  position: relative;
+  &__img,&:after{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; // define a dimensão que vai estar(a frente ou atrás do resto do html)
+  }
+  &__img{
+    object-fit: cover;//define como a imagem se comporta ao se esticar
+  }
+  &:after{ //cria um objeto html que pode ser estilizado, nesse caso vai ser o ultimo objeto da section com classe bannner
+    content:""; //se não definir ele não vai ser criado. Pode ser uma imagem um texto ou nada.
+    background-color: rgba(0, 0, 0, 0.35); //cor dele é um preto transparente, para escurecer o que estiver atrás
+  }
   .container{
-    height: 35rem;
+    height: 35vw;
     display: flex;
     align-items: center;
-  }
-  svg{
-    width: 3rem;
-    fill: pink;
   }
   h1{
     display: flex;
@@ -16,5 +26,21 @@
     gap: 1rem;
     font-size: 3rem;
     color: white;
+    svg{
+      width: 3rem;
+      fill: pink;
+    }
+  }
+  @media(max-width:863px){
+    .container{
+      height: 140vw;
+      max-height: 31.6875rem;
+    }
+    h1{
+      font-size:2rem;
+      svg{
+        width: 2rem;
+      }
+    }
   }
 }
