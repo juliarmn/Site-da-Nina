@@ -53,12 +53,12 @@
       margin-left: 1rem;
       a{
         padding: 0.5rem 1rem;
-        background-color: $fundobotao;
-        border: 2px solid $fundobotao;
+        background-color: $blue;
+        border: 2px solid $blue;
         border-radius: 1rem;
-        color:darken($fundobotao,30);
+        color:darken($blue,30);
         &:hover{
-          color: $fundobotao;
+          color: $blue;
           background-color: transparent;
         }
       }

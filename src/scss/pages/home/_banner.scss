@@ -13,7 +13,7 @@
   }
   &:after{ //cria um objeto html que pode ser estilizado, nesse caso vai ser o ultimo objeto da section com classe bannner
     content:""; //se não definir ele não vai ser criado. Pode ser uma imagem um texto ou nada.
-    background-color: rgba(0, 0, 0, 0.35); //cor dele é um preto transparente, para escurecer o que estiver atrás
+    background-color: rgba(0, 0, 0, 0.20); //cor dele é um preto transparente, para escurecer o que estiver atrás
   }
   .container{
     height: 35vw;
