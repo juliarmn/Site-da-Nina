@@ -1,6 +1,5 @@
-.sobre-home {
+.image-text {
   padding: 5rem 0;
-  background-image: url(../../../images/fundo-sobre.webp);
   .container {
     display: flex;
     align-items: center;
@@ -10,9 +9,7 @@
   &__img {
     width: 100%;
     max-width: 27rem;
-    // background-color: darken($blue,5);
-    background: url("../../../images/fundo-nina.webp");
-    background-size: cover;
+    background-size: cover !important;
     border-radius: 1rem;
     img {
       width: 100%;
@@ -50,6 +47,22 @@
         background-color: transparent;
         color: darken(pink,15);
         border-color: darken(pink,15);
+      }
+    }
+  }
+  &.sobre{
+    background-image: url(../../../images/fundo-sobre.webp);
+    .image-text{
+      &__img{
+        background: url("../../../images/fundo-nina.webp");
+      }
+    }
+  }
+  &.galeria{
+    background-image: url(../../../images/fundo-galeria.webp);
+    .image-text{
+      &__img{
+        background: url("../../../images/fundo-nina.webp");
       }
     }
   }
