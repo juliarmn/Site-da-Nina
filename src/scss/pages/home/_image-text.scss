@@ -8,7 +8,7 @@
   }
   &__img {
     width: 100%;
-    max-width: 27rem;
+    max-width: 50rem;
     background-size: cover !important;
     border-radius: 2rem;
     img {
@@ -34,7 +34,7 @@
     
   }
   &.sobre{
-   
+    background-image: url(../../../images/fundo-sobre.webp);
     a {
       display: block;
       width: fit-content;

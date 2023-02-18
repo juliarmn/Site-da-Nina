@@ -199,7 +199,7 @@ table {
 .banner {
   position: relative;
 }
-.banner__img, .banner:after {
+.banner__img {
   position: absolute;
   top: 0;
   left: 0;
@@ -211,27 +211,76 @@ table {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.banner:after {
-  content: "";
-  background-color: rgba(0, 0, 0, 0.2);
-}
 .banner .container {
-  height: 35vw;
+  height: 60vh;
   display: flex;
   align-items: center;
+}
+.banner .waves {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: -5px;
+}
+.banner .content {
+  position: relative;
+  height: 0.5vh;
+  text-align: center;
+  background-color: white;
+}
+.banner .parallax > use {
+  animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5);
+}
+.banner .parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.banner .parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.banner .parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.banner .parallax > use:nth-child(1) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
 }
 .banner h1 {
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 1rem;
-  font-size: 3rem;
-  color: white;
+  font-size: 4rem;
+  color: rgb(253, 185, 196);
 }
 .banner h1 svg {
   width: 3rem;
-  fill: pink;
+  fill: rgb(247, 151, 167);
 }
 @media (max-width: 863px) {
+  .banner ::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  .banner:after {
+    content: "";
+    background-color: rgba(255, 255, 255, 0);
+  }
   .banner .container {
     height: 140vw;
     max-height: 31.6875rem;
@@ -255,9 +304,9 @@ table {
 }
 .image-text__img {
   width: 100%;
-  max-width: 27rem;
+  max-width: 50rem;
   background-size: cover !important;
-  border-radius: 1rem;
+  border-radius: 2rem;
 }
 .image-text__img img {
   width: 100%;
@@ -298,9 +347,6 @@ table {
   background-color: transparent;
   color: #ff748c;
   border-color: #ff748c;
-}
-.image-text.sobre .image-text__img {
-  background: url("../../../images/WhatsApp Image 2023-02-11 at 22.36.20.jpeg");
 }
 .image-text.galeria {
   background-image: url(../../../images/fundo-galeria.webp);
