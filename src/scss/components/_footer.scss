@@ -1,0 +1,49 @@
+.footer {
+  width: 100%;
+  padding: 2rem 0;
+  background-color: pink;
+  text-align: center;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    div{
+      width: 100%;
+      max-width: 40rem;
+    }
+  }
+  h3 {
+    color: purple;
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+  }
+  &__links {
+    a {
+      text-decoration: none;
+      color: rgb(255, 58, 150);
+      display: block;
+      margin-bottom: 10px;
+      &:hover {
+        transform: scale(1.1);
+        transition: 0.3s;
+      }
+    }
+  }
+  &__logo {
+    img {
+      width: 100%;
+      max-width: 180px;
+      transition: 0.3s;
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+  &__contato {
+    p {
+      color: rgb(255, 58, 150);
+    }
+  }
+}
