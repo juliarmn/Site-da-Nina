@@ -5,24 +5,31 @@
     align-items: center;
     gap: 5rem;
     justify-content: space-between;
+    div{
+      flex: 1 1 100%;
+    }
+    @media (max-width: 814px){
+      flex-direction: column;
+      gap: 2rem;
+    }
   }
   &__img {
-    width: 100%;
     max-width: 50rem;
     background-size: cover !important;
     border-radius: 2rem;
     img {
       width: 100%;
       object-fit: cover;
-
     }
   }
   &__text {
-    max-width: 45rem;
     color:$black;
     h2 {
       font-size: 2.5rem;
       margin-bottom: 2rem;
+      @media (max-width:  906px) {
+        font-size: 2rem;
+      }
     }
 
     p {

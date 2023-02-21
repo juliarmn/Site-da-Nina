@@ -1,15 +1,19 @@
 .footer {
   width: 100%;
-  padding: 2rem 0;
   background-color: pink;
   text-align: center;
   .container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     div{
       width: 100%;
       max-width: 40rem;
+    }
+    @media (max-width: 540px){
+      flex-direction: column;
     }
   }
   h3 {
@@ -43,7 +47,10 @@
   }
   &__contato {
     p {
-      color: rgb(255, 58, 150);
+      color: #ff3a96;
     }
+  }
+  &__copyright{
+    background-color: darken(pink, 10);
   }
 }
