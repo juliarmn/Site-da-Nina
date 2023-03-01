@@ -52,5 +52,14 @@
   }
   &__copyright{
     background-color: darken(pink, 10);
+    margin: 0;
+    padding: 2px;
+  p {
+    color: rgb(231, 4, 129);
+    a {
+      text-decoration: none;
+      color: rgb(173, 18, 173);
+    }
+  }
   }
 }

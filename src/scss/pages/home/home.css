@@ -464,4 +464,13 @@ table {
 }
 .footer__copyright {
   background-color: #ff8da1;
+  margin: 0;
+  padding: 2px;
+}
+.footer__copyright p {
+  color: rgb(231, 4, 129);
+}
+.footer__copyright p a {
+  text-decoration: none;
+  color: rgb(173, 18, 173);
 }
