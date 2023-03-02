@@ -1,0 +1,45 @@
+.sobre-historia {
+  background-color: $blue;
+  display: flex;
+  .container {
+    display: flex;
+    top: 2rem;
+    padding: 3rem;
+  }
+  .card {
+    width: 80rem;
+    height: 400px;
+    background-color: #fdf2e3;
+    border-radius: 15px;
+    padding: 3px;
+  }
+  img {
+    display: flex;
+    position: absolute;
+    align-items: baseline;
+    justify-content: baseline;
+    padding: 3rem;
+  }
+  h2 {
+    // padding: 60px;
+    top: 4rem;
+    left: 200px;
+    margin: 30px;
+    font-size: 2rem;
+    color: rgb(253, 148, 197);
+    text-decoration: wavy;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+  }
+  p {
+    position: relative;
+    display: flex;
+    width: 40rem;
+    top:  4rem;
+    left: 35rem;
+    color: rgb(39, 38, 46);
+    font-weight: 500;
+  }
+}
