@@ -290,39 +290,26 @@ table {
   top: 2rem;
   padding: 3rem;
 }
-.sobre-historia .card {
+.sobre-historia__card {
   width: 80rem;
   height: 400px;
   background-color: #fdf2e3;
   border-radius: 15px;
-  padding: 3px;
-}
-.sobre-historia img {
+  padding: 1.5rem;
   display: flex;
-  position: absolute;
-  align-items: baseline;
-  justify-content: baseline;
-  padding: 3rem;
 }
-.sobre-historia h2 {
-  top: 4rem;
-  left: 200px;
-  margin: 30px;
+.sobre-historia__card img {
+  width: 100%;
+}
+.sobre-historia__card__text {
+  width: 100%;
+}
+.sobre-historia__card__text h2 {
   font-size: 2rem;
   color: rgb(253, 148, 197);
-  -webkit-text-decoration: wavy;
-          text-decoration: wavy;
-  display: flex;
-  position: relative;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
 }
-.sobre-historia p {
-  position: relative;
-  display: flex;
-  width: 40rem;
-  top: 4rem;
-  left: 35rem;
+.sobre-historia__card__text p {
   color: rgb(39, 38, 46);
   font-weight: 500;
 }
