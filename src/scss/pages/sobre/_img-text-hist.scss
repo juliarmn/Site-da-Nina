@@ -9,33 +9,29 @@
   }
 
   &__card {
-    width: 80rem;
-    height: 400px;
+    width: 100%;
     background-color: #fdf2e3;
     border-radius: 15px;
-    padding: 1.5rem;
+    padding: 4rem;
     display: flex;
-
+    gap: 4rem;
 
     img {
-      width: 100%;
+      width: 70%;
     }
-
-
     &__text {
       width: 100%;
-
       h2 {
         font-size: 2rem;
         color: rgb(253, 148, 197);
         text-align: center;
+        margin: 0 0 1.5rem 0;
       }
-
       p {
         color: rgb(39, 38, 46);
         font-weight: 500;
+        margin: 1rem 0;
       }
     }
   }
-
 }
