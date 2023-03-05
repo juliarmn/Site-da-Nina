@@ -1,9 +1,12 @@
 @import "../../utils/utils";
 
+//GLOBAL COMPONENTS
 @import "../../components/header";
 
+@import "../../components/footer";
+
+
+//HOME COMPONENTS
 @import "./banner";
 
 @import "./image-text";
-
-@import "../../components/footer";

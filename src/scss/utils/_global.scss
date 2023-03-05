@@ -8,3 +8,7 @@
   margin: auto;
   padding: 0 1rem;
 }
+
+@mixin section-padding {
+  padding: 5rem 0;
+}

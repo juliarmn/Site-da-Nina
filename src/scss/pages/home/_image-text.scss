@@ -1,5 +1,5 @@
 .image-text {
-  padding: 5rem 0;
+  @include section-padding;
   .container {
     display: flex;
     align-items: center;

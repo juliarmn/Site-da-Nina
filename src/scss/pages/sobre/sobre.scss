@@ -1,7 +1,14 @@
 @import "../../utils/utils";
 
+//GLOBAL COMPONENTS
 @import "../../components/header";
 
+@import "../../components/footer";
+
+
+// SOBRE COMPONENTS
 @import "./banner-sobre";
 
 @import "./img-text-hist";
+
+@import "./cards-info";
