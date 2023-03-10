@@ -257,3 +257,79 @@ table {
   text-decoration: none;
   color: rgb(173, 18, 173);
 }
+
+.card {
+  padding: 5rem;
+}
+.card .container {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 3rem;
+  border-radius: 2rem;
+  border: 2px dashed #c9c9f3;
+}
+.card .container div {
+  flex: 1 1 100%;
+}
+@media (max-width: 814px) {
+  .card .container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+.card .container_1 {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 3rem;
+  border-radius: 2rem;
+  border: 2px dashed #c9c9f3;
+}
+.card .container_1 div {
+  flex: 1 1 100%;
+}
+@media (max-width: 814px) {
+  .card .container_1 {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+.card__img {
+  max-width: 14rem;
+  background-size: cover !important;
+  border-radius: 2rem;
+}
+.card__img img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1rem;
+}
+.card__img_1 {
+  max-width: 14rem;
+  background-size: cover !important;
+  border-radius: 2rem;
+}
+.card__img_1 img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1rem;
+}
+.card.gato-1 {
+  background-image: url(../../../images/fundo-sobre.webp);
+}
+.card.gato-2 {
+  background-image: url(../../../images/fundo-galeria.webp);
+}
+.card.gato-3 {
+  background-image: url(../../../images/fundo_roxo_.webp);
+}
+.card.gato-4 {
+  background-image: url(../../../images/fundo_verde.webp);
+}
